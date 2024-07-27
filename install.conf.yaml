@@ -1,0 +1,16 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshrc: config/zshrc
+    ~/.gitconfig:
+      path: config/git/git.conf
+    ~/.ssh/config:
+      path: config/ssh.conf
+    ~/.p10k.zsh: config/p10k.zsh
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
