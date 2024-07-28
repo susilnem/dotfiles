@@ -1,6 +1,7 @@
 - defaults:
     link:
       relink: true
+      create: true
 
 - clean: ['~']
 
@@ -11,6 +12,7 @@
     ~/.ssh/config:
       path: config/ssh.conf
     ~/.p10k.zsh: config/p10k.zsh
-
+    ~/.config/nvim:
+      path: config/neovim/
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
