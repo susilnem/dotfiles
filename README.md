@@ -13,5 +13,14 @@ cd dotfiles
 
 ## TODO
 - [ ] Vim & Neovim Configuration
+    - [x] `Lazy-neovim` Package manager
+    - [x] catppuccin colorscheme
+    - [x] telescope config
+    - [x] treesitter config
+    - [ ] chadtree
+    - [ ] lsp configuration `mason` & `mason-lsp` (important)
+    - [ ] neotree
+    - [ ] fzf configuration
+    - [ ] comment nvim 
 - [ ] tmux Configuration
 - [ ] i3wm Customized Configuration
