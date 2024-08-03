@@ -16,3 +16,11 @@
       path: config/neovim/
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  # Install latest node version using nvm
+  -
+    description: Install nvm latest node
+    command: source $NVM_DIR/nvm.sh && nvm install node && node --version
+    stderr: true
+  -
+    - '[ -f ~/.git-additional.config ] || cat ~/dotfiles/additional-template/.git-additional.config >> ~/.git-additional.config'
+    - Initialize git additional configs
