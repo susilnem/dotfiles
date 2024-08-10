@@ -14,7 +14,15 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
-require 'options'
-require 'post-options'
-require("lazy").setup("plugins")
-require 'key-mappings'
+
+-- Setup lazy.nvim
+require("core")
+require("lazy").setup({ { import = "plugins" } }, {
+  checker = {
+    enabled = true,
+    notify = false,
+  },
+  change_detection = {
+    notify = false,
+  },
+})
