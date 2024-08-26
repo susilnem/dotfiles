@@ -14,6 +14,8 @@
     ~/.p10k.zsh: config/p10k.zsh
     ~/.config/nvim:
       path: config/neovim/
+    ~/.config/tmux/tmux.conf:
+      path: config/tmux/tmux.conf
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   # Install latest node version using nvm
